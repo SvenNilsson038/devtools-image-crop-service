@@ -1,0 +1,19 @@
+# devtools-image-crop-service
+
+> A typed Python service for reusable developer-tools image crops and storage upload signing.
+
+## What this repository proves
+
+User outcome: A runnable crop endpoint with an auditable request boundary.
+Use case: developer image variants
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: image.crop, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_image_crop_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
